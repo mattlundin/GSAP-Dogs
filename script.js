@@ -35,6 +35,7 @@ tl.to('nav', {
 			x: 0,
 			scale: 1,
 			duration: 1,
+			opacity: 1,
 		},
 		'-=1',
 	)
@@ -44,6 +45,7 @@ tl.to('nav', {
 			x: 0,
 			scale: 1,
 			duration: 1,
+			opacity: 1,
 		},
 		'-=1',
 	)
