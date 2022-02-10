@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	background-color: #ffefdb;
+	overflow-x: hidden;
+}
+
+nav {
+	position: sticky;
+	display: flex;
+	align-items: center;
+	height: 7vh;
+	width: 100%;
+	background-color: #ffdaad;
+	/* gsap */
+	transform: translateY(-100%);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	margin-left: 5%;
+	font-size: 3rem;
+}
+
+.header {
+	text-align: center;
+	margin: 0.5rem 0;
+	font-size: 1.8rem;
+	/* gsap */
+	opacity: 0;
+}
+
+.banner-container {
+	display: flex;
+	justify-content: center;
+	height: 30vh;
+	width: 100%;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 700px;
+	max-width: 800px;
+	background: url('https://images.unsplash.com/photo-1541876176131-3f5e84a7331a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80')
+		center center;
+	background-size: cover;
+	/* gsap */
+	transform: translateY(100%);
+	opacity: 0;
+}
+
+.banner h3 {
+	padding: 2rem 5rem;
+	background-color: rgba(0, 0, 0, 0.26);
+	color: #fff;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* width: 100%; */
+	margin: 1rem 0;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 30vw;
+	padding: 1rem 3rem;
+	background-color: #fff8ef;
+	border: 4px groove #000;
+}
+
+/* gsap */
+.column:nth-child(1) {
+	transform: translateX(-100%) scale(0.2);
+}
+.column:nth-child(2) {
+	transform: translateX(100%) scale(0.2);
+}
+
+/* .img-container {
+	display: flex;
+	justify-content: center;
+	height: 30vh;
+	width: 100%;
+} */
+
+.image-boxes {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #fff8ef;
+}
+
+.image-boxes .box {
+	height: 200px;
+	width: 200px;
+}
+
+.image-boxes .box:nth-child(2) {
+	margin: 0 5%;
+}
+
+.box img {
+	height: 100%;
+	width: 100%;
+	/* gsap */
+	transform: translateY(100%);
+	opacity: 0;
+}
+footer {
+	text-align: center;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	font-size: 2rem;
+	background-color: #ffdaad;
+	/* gsap */
+	transform: translateY(100%);
+}
+
+@media (max-width: 900px) {
+	.row {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.column {
+		margin-top: 2rem;
+		width: 80vw;
+	}
+}
+
+@media (max-width: 680px) {
+	.banner-container {
+		padding: 0 10px;
+	}
+	.image-boxes {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.image-boxes .box:nth-child(2) {
+		margin: 2% 0;
+	}
+}
