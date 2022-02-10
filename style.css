@@ -91,12 +91,10 @@ nav {
 
 /* gsap */
 .column:nth-child(1) {
-	transform: translateX(-100%) scale(0.2);
-	opacity: 0;
+	transform: translateX(-150%) scale(0.2);
 }
 .column:nth-child(2) {
-	transform: translateX(100%) scale(0.2);
-	opacity: 0;
+	transform: translateX(150%) scale(0.2);
 }
 
 /* .img-container {
