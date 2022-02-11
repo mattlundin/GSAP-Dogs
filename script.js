@@ -30,6 +30,15 @@ tl.to('nav', {
 		'-=1.5',
 	)
 	.to(
+		'.banner h3',
+		{
+			y: 0,
+			opacity: 1,
+			duration: 1.6,
+		},
+		'-=1.5',
+	)
+	.to(
 		'.column:nth-child(1)',
 		{
 			x: 0,

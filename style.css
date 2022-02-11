@@ -68,6 +68,9 @@ nav {
 	padding: 2rem 5rem;
 	background-color: rgba(0, 0, 0, 0.26);
 	color: #fff;
+	/* gsap */
+	transform: translateY(-100%);
+	opacity: 0;
 }
 
 .row {
@@ -111,6 +114,7 @@ nav {
 	justify-content: center;
 	width: 100%;
 	background-color: #fff8ef;
+	overflow: hidden;
 }
 
 .image-boxes .box {
