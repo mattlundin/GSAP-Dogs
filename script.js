@@ -1,6 +1,4 @@
-const tl = gsap.timeline({
-	defaults: { ease: 'power4.inOut' },
-});
+const tl = gsap.timeline({ defaults: { ease: 'power4.inOut' } });
 
 tl.to('nav', { y: 0 })
 	.to('footer', { y: 0 }, '-=.5')
